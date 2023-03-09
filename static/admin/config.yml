@@ -59,9 +59,13 @@
 #       - {label: "Body", name: "body", widget: "markdown"}
 
 backend:
-  # name: git-gateway
-  name: github
+  name: git-gateway
+  # name: github
   repo: parth2860/sharkopedia
+  # auth_endpoint: https://github.com/parth2860/sharkopedia.git
+  identity:
+    # this is the URL of your Netlify site's .netlify/functions/identity endpoint
+    api_url: /.netlify/functions/identity
   branch: master # Branch to update (optional; defaults to master)
   # commit_messages:
   #   create: 'Create {{collection}} “{{slug}}”'
