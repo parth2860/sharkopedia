@@ -59,8 +59,8 @@
 #       - {label: "Body", name: "body", widget: "markdown"}
 
 backend:
-  name: git-gateway
-  # name: github
+  # name: git-gateway
+  name: github
   repo: parth2860/sharkopedia
   # auth_endpoint: https://github.com/parth2860/sharkopedia.git
   identity:
